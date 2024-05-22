@@ -1,0 +1,58 @@
+const sapatos = [
+    {
+        nome: 'Plataforma Bege Comfort',
+        imagem: './03.imagensProdutos/feminino/sapatos/f (1).png',
+        qtd: 10,
+        descricao: 'Eleve seu estilo com nossa Plataforma Bege Comfort. Fabricada com uma mistura de camurça sintética e material têxtil respirável, este sapato oferece conforto e estilo sem igual. A plataforma adiciona altura e elegância a qualquer look, tornando-o perfeito para ocasiões casuais ou sofisticadas.',
+        preco: 69.99
+    },
+    {
+        nome: 'Salto Marrom Clássico',
+        imagem: './03.imagensProdutos/feminino/sapatos/f (2).png',
+        qtd: 15,
+        descricao: 'Faça uma declaração de moda com nosso Salto Marrom Clássico. Feito de couro legítimo de alta qualidade, este sapato oferece conforto duradouro e estilo atemporal. O salto alto adiciona elegância e sofisticação a qualquer look, garantindo que você se destaque em qualquer ocasião.',
+        preco: 59.99
+    },
+    {
+        nome: 'Sapatilha Vinho Charme',
+        imagem: './03.imagensProdutos/feminino/sapatos/f (3).png',
+        qtd: 8,
+        descricao: 'Encante com nossa Sapatilha Vinho Charme. Fabricada em material sintético macio, esta sapatilha oferece conforto e estilo em igual medida. A cor vinho adiciona um toque de sofisticação a qualquer look, tornando este sapato perfeito para o dia a dia ou ocasiões especiais.',
+        preco: 39.99
+    },
+    {
+        nome: 'Papete Couro Preta Conforto',
+        imagem: './03.imagensProdutos/feminino/sapatos/f (4).png',
+        qtd: 20,
+        descricao: 'Desfrute do conforto sem sacrificar o estilo com nossa Papete Couro Preta. Fabricada em couro legítimo, esta papete oferece durabilidade e conforto durante todo o dia. O design versátil permite que você use este sapato com uma variedade de looks, tornando-o um essencial em qualquer guarda-roupa.',
+        preco: 49.99
+    },
+    {
+        nome: 'Sandália Rasteira Bege Leveza',
+        imagem: './03.imagensProdutos/feminino/sapatos/f (5).png',
+        qtd: 12,
+        descricao: 'Sinta a leveza do verão com nossa Sandália Rasteira Bege. Fabricada em material têxtil respirável, esta sandália oferece conforto e estilo para os dias quentes. A cor bege neutra combina com uma variedade de looks, tornando este sapato perfeito para qualquer ocasião casual.',
+        preco: 29.99
+    },
+    {
+        nome: 'Bota Bico Fino Salto Médio Elegância',
+        imagem: './03.imagensProdutos/feminino/sapatos/f (6).png',
+        qtd: 18,
+        descricao: 'Eleve seu estilo com nossa Bota Bico Fino Salto Médio Elegância. Fabricada em couro de alta qualidade, esta bota oferece conforto e durabilidade. O bico fino e o salto médio adicionam elegância a qualquer look, tornando este sapato perfeito para ocasiões especiais ou para o dia a dia.',
+        preco: 79.99
+    },
+    {
+        nome: 'Tênis Casual Branco e Bege Estilo',
+        imagem: './03.imagensProdutos/feminino/sapatos/f (7).png',
+        qtd: 6,
+        descricao: 'Desfrute do conforto e estilo com nosso Tênis Casual Branco e Bege. Fabricado em material sintético respirável, este tênis oferece conforto duradouro para os seus pés. A combinação de cores branco e bege adiciona um toque de estilo a qualquer look casual, tornando este sapato perfeito para o dia a dia.',
+        preco: 54.99
+    },
+    {
+        nome: 'Tênis Preto Esportivo Performance',
+        imagem: './03.imagensProdutos/feminino/sapatos/f (8).png',
+        qtd: 14,
+        descricao: 'Supere seus limites com nosso Tênis Preto Esportivo Performance. Fabricado com material sintético leve e respirável, este tênis oferece suporte e conforto durante todo o treino. O design elegante e esportivo torna este sapato uma escolha versátil para atividades físicas ou para o dia a dia.',
+        preco: 64.99
+    }
+];

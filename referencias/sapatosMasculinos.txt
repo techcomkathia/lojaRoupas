@@ -1,0 +1,58 @@
+sapatosMasculinos = [
+    {
+        nome: 'Bota Cinza Aventura',
+        imagem: './03.imagensProdutos/masculino/sapatos/m (1).png',
+        qtd: 10,
+        descricao: 'Prepare-se para suas aventuras com nossa Bota Cinza Aventura. Feita de couro sintético resistente e durável, esta bota oferece conforto e proteção em todas as condições. O tom de cinza neutro combina facilmente com uma variedade de looks, tornando esta bota perfeita para qualquer ocasião ao ar livre.',
+        preco: 89.99
+    },
+    {
+        nome: 'Tênis Esportivo Azul e Amarelo Performance',
+        imagem: './03.imagensProdutos/masculino/sapatos/m (2).png',
+        qtd: 15,
+        descricao: 'Supere seus limites com nosso Tênis Esportivo Azul e Amarelo Performance. Projetado para oferecer suporte e conforto durante todo o treino, este tênis é uma escolha ideal para atletas sérios. O design vibrante em azul e amarelo adiciona um toque de estilo a cada passo.',
+        preco: 74.99
+    },
+    {
+        nome: 'Sapato Social Marrom Elegância',
+        imagem: './03.imagensProdutos/masculino/sapatos/m (3).png',
+        qtd: 8,
+        descricao: 'Exude elegância em cada passo com nosso Sapato Social Marrom Elegância. Feito de couro genuíno de alta qualidade, este sapato oferece conforto e sofisticação para qualquer ocasião. O marrom clássico e o design atemporal garantem que você esteja sempre impecável.',
+        preco: 99.99
+    },
+    {
+        nome: 'Sapato Casual Couro Marrom Estilo',
+        imagem: './03.imagensProdutos/masculino/sapatos/m (4).png',
+        qtd: 20,
+        descricao: 'Adicione um toque de estilo descontraído ao seu visual com nosso Sapato Casual Couro Marrom. Feito de couro sintético macio e durável, este sapato oferece conforto e versatilidade para o dia a dia. O marrom rico e o design casual fazem deste sapato uma escolha perfeita para qualquer ocasião.',
+        preco: 59.99
+    },
+    {
+        nome: 'Tênis Casual Preto e Branco Moderno',
+        imagem: './03.imagensProdutos/masculino/sapatos/m (5).png',
+        qtd: 12,
+        descricao: 'Mantenha-se estiloso e confortável com nosso Tênis Casual Preto e Branco. Feito de material sintético respirável, este tênis oferece conforto durante todo o dia. O design moderno em preto e branco adiciona um toque de estilo a qualquer look casual.',
+        preco: 49.99
+    },
+    {
+        nome: 'Tênis Cinza Branco e Preto Versatilidade',
+        imagem: './03.imagensProdutos/masculino/sapatos/m (6).png',
+        qtd: 18,
+        descricao: 'Adicione versatilidade ao seu guarda-roupa com nosso Tênis Cinza Branco e Preto. Feito de material sintético leve e respirável, este tênis oferece conforto durante todo o dia. O design em cinza, branco e preto combina facilmente com uma variedade de looks, tornando este sapato uma escolha versátil para qualquer ocasião.',
+        preco: 54.99
+    },
+    {
+        nome: 'Bota Couro Marrom Aventure-se',
+        imagem: './03.imagensProdutos/masculino/sapatos/m (7).png',
+        qtd: 6,
+        descricao: 'Prepare-se para suas aventuras com nossa Bota Couro Marrom Aventure-se. Feita de couro genuíno de alta qualidade, esta bota oferece conforto e proteção em todas as condições. O marrom rico e o design robusto fazem desta bota uma escolha confiável para qualquer explorador.',
+        preco: 79.99
+    },
+    {
+        nome: 'Sandálias Degradê Marrom Estilo Casual',
+        imagem: './03.imagensProdutos/masculino/sapatos/m (8).png',
+        qtd: 14,
+        descricao: 'Curta o verão com estilo em nossas Sandálias Degradê Marrom. Feitas de material sintético durável e resistente à água, estas sandálias oferecem conforto e estilo para os dias quentes. O degradê marrom suave adiciona um toque de sofisticação a qualquer look casual de verão.',
+        preco: 39.99
+    }
+]
