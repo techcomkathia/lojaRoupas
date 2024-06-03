@@ -233,7 +233,8 @@ let produtosMasculinos = [
 //conseguimos generalizar a mesma função para a página de produtos femininos, masculinos ou infantis. 
 
 function montarProdutos(arrayProdutos,idDiv){
-        
+    //iniciando o id para montar o identificador único de cada produto nos cards e modal de detalhes
+    let idProduto = 1    
     arrayProdutos.forEach((produto)=>{
 
 
@@ -322,8 +323,6 @@ function montarProdutos(arrayProdutos,idDiv){
         idProduto+=1
     
     })
-    
-
 }
 
 montarProdutos(produtosMasculinos,'roupasMasculinas')
