@@ -229,6 +229,9 @@ let produtosMasculinos = [
 ]
 
 
+let carrinhoCompras = []
+
+
 //Trasformamos toda a logica de montagem de produtos em uma função. Para passar o array e a div correta 
 //conseguimos generalizar a mesma função para a página de produtos femininos, masculinos ou infantis. 
 
@@ -263,7 +266,7 @@ function montarProdutos(arrayProdutos, idDiv) {
             <!-- inclusão de uma div para melhor disposição dos botões-->
             <div class="d-flex justify-content-center align-items-center ">
                 <button class="btn btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#masculino${idProduto}"> Ver detalhes</button>
-                <button class="btn btn-primary mx-1">Adicionar ao carrinho</button>  
+                <button onclick = " adicionarAoCarrinho(${produto})" class="btn btn-primary mx-1">Adicionar ao carrinho</button>  
             </div>      
         </div>
         `;
@@ -326,6 +329,11 @@ function montarProdutos(arrayProdutos, idDiv) {
         divRoupas.appendChild(divModal);
         idProduto += 1;
     });
+}
+
+
+function adicionarAoCarrinho(produto){
+    carrinhoCompras.push(produto)
 }
 
 montarProdutos(produtosMasculinos, 'roupasMasculinas');
