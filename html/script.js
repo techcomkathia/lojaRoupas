@@ -232,44 +232,47 @@ let produtosMasculinos = [
 //Trasformamos toda a logica de montagem de produtos em uma função. Para passar o array e a div correta 
 //conseguimos generalizar a mesma função para a página de produtos femininos, masculinos ou infantis. 
 
-function montarProdutos(arrayProdutos,idDiv){
-    //iniciando o id para montar o identificador único de cada produto nos cards e modal de detalhes
-    let idProduto = 1    
-    arrayProdutos.forEach((produto)=>{
+function montarProdutos(arrayProdutos, idDiv) {
+    // selecionando o elemento pai
+    let divRoupas = document.getElementById(idDiv); // div pai
 
+    // criando uma única div linha para conter todos os produtos
+    let divLinha = document.createElement('div'); // div filha
+    // adicionando a classe row
+    //inclusão das classes para display flexível 
+    divLinha.classList.add('row', 'd-flex', 'justify-content-center', 'align-items-center');
 
-        // selecionar o elemento pai
-        let divRoupas = document.getElementById(idDiv) //div pai
-    
-        let divLinha = document.createElement('div') //div filha
-        //adicionando a primeira classe
-        divLinha.classList.add('container','row')
-        //adicionando a segunda classe
-    
-    
-        //adiciando um filho ao pai
-        divRoupas.appendChild(divLinha)// selecionar o elemento pai
-        
-        //div card produto
-        let cardProduto = document.createElement('div')
-        //adicionando as classes card col m-3
-        cardProduto.classList.add('col-3','card','m-3')
-    
+    // adicionando o filho ao pai
+    divRoupas.appendChild(divLinha);
+
+    // iniciando o id para montar o identificador único de cada produto nos cards e modal de detalhes
+    let idProduto = 1;
+    arrayProdutos.forEach((produto) => {
+        // div card produto
+        let cardProduto = document.createElement('div');
+        // adicionando as classes card col m-3
+        cardProduto.classList.add('col-3', 'card', 'm-3');
+
         cardProduto.innerHTML = `
         <img src="${produto.imagem}" class="card-img-top my-3" 
         alt="${produto.nome}">
         <div class="card-body">
             <h5 class="card-title">${produto.nome}</h5>
             <p class="card-text"> ${produto.preco}</p>
-            <button href="#" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#masculino${idProduto}"> Ver detalhes</button>
-            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>        
+
+            <!-- inclusão de uma div para melhor disposição dos botões-->
+            <div class="d-flex justify-content-center align-items-center ">
+                <button class="btn btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#masculino${idProduto}"> Ver detalhes</button>
+                <button class="btn btn-primary mx-1">Adicionar ao carrinho</button>  
+            </div>      
         </div>
-        `
-        //div linha sendo o elemento pai de cada card de produto.
-        divLinha.appendChild(cardProduto)
-    
-        //criação do modal
-        let divModal = document.createElement('div')
+        `;
+
+        // div linha sendo o elemento pai de cada card de produto.
+        divLinha.appendChild(cardProduto);
+
+        // criação do modal
+        let divModal = document.createElement('div');
         divModal.innerHTML = `
         <div class="modal fade" id="masculino${idProduto}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -317,12 +320,12 @@ function montarProdutos(arrayProdutos,idDiv){
         </div>
         </div>
         </div>
-        `
-    
-        divLinha.appendChild(divModal)
-        idProduto+=1
-    
-    })
+        `;
+
+        // Adicionando o modal ao final do divRoupas (fora da divLinha)
+        divRoupas.appendChild(divModal);
+        idProduto += 1;
+    });
 }
 
-montarProdutos(produtosMasculinos,'roupasMasculinas')
+montarProdutos(produtosMasculinos, 'roupasMasculinas');
